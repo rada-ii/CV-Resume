@@ -10,6 +10,8 @@ let resumeJob = document.getElementsByTagName("h2")[0];
 let container = document.querySelector(".container");
 let two = document.querySelector(".two");
 let three = document.querySelector(".three");
+let skills = document.querySelectorAll(".articleOne p");
+// let skillsR = document.querySelectorAll(".right");
 
 let flashlightOn = false;
 
@@ -52,6 +54,11 @@ function toggleFlashlight() {
     two.style.color = "#f3f3f3";
     three.style.backgroundColor = "#3a3a3a";
     three.style.color = "#f3f3f3";
+    // skills.style.color = "#f3f3f3";
+    // skillsR.style.color = "#f3f3f3";
+    skills.forEach((skill) => {
+      skill.style.color = "#f3f3f3";
+    });
   }
 }
 
@@ -64,10 +71,10 @@ document.addEventListener("touchmove", getMousePosition);
 
 const now = new Date();
 const span = document.createElement("span");
+const footer = document.querySelector(".footer");
 
 span.textContent = dateFns.format(now, "MMMM, YYYY. ");
-const existingSpan = document.querySelector("span");
-existingSpan.parentNode.replaceChild(span, existingSpan);
+footer.insertBefore(span, footer.firstChild);
 
 /* accordion*/
 

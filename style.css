@@ -12,7 +12,7 @@ body {
   /* font-family: system-ui; */
   font-family: "Lato", sans-serif;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 14px;
   position: relative;
 }
 
@@ -115,6 +115,11 @@ a:active {
 .articleOne p {
   padding: 10px;
   text-align: center;
+  color: #d7ba89;
+  font-weight: 700;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  z-index: 1;
 }
 
 .articleTwo li,
@@ -191,6 +196,7 @@ footer li {
   display: inline-flex;
   width: 100%;
   height: 100%;
+  z-index: 2;
   position: absolute;
   background: radial-gradient(
     circle 9em at var(--Xpos) var(--Ypos),
@@ -211,13 +217,13 @@ button {
   /* border-radius: 5px; */
   border: none;
   margin-top: 10px;
-  background-color: #155e75;
+  background-color: #d7ba89;
   color: #ffffff;
   letter-spacing: 1px;
 }
 
 button:hover {
-  background-color: #0891b2;
+  background-color: rgba(182, 254, 1);
   color: #404040;
   cursor: pointer;
 }
@@ -259,4 +265,63 @@ button:hover {
 
 .active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+/* slides */
+.articleOne p {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+}
+
+.articleOne .left {
+  animation-name: slideInLeft;
+}
+
+.articleOne .right {
+  animation-name: slideInRight;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.articleOne p.left {
+  text-shadow: 2px 2px 3px rgba(182, 254, 1, 0.5);
+}
+
+.articleOne p.right {
+  text-shadow: -2px 2px 3px rgba(175, 194, 0, 0.5);
+}
+
+.white-text {
+  color: #fff;
 }
