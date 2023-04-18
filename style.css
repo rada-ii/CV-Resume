@@ -5,9 +5,9 @@
 }
 
 body {
-  /* background-color: #262626; */
+  background-color: #262626;
   /* background-color: #334155; */
-  background-color: #6f8695;
+  /* background-color: #6f8695; */
   color: #5d5d5d;
   /* font-family: system-ui; */
   font-family: "Lato", sans-serif;
@@ -53,7 +53,7 @@ img {
 h1 {
   border-bottom: 1px solid #05204a;
   width: 87%;
-  padding-top: 1.2%;
+  padding: 1.2% 0;
   margin-left: 5%;
   text-align: left;
   /* margin-bottom: 2%; */
@@ -61,7 +61,7 @@ h1 {
 
 h2 {
   text-align: right;
-  /* padding: 1.5%; */
+  padding-top: 1.2%;
   margin-right: 7%;
 }
 
@@ -187,8 +187,8 @@ footer li {
 }
 
 #flashlight {
-  --Xpos: 70vw;
-  --Ypos: 70vh;
+  --Xpos: 580px;
+  --Ypos: 100px;
 }
 
 #flashlight::before {
@@ -199,7 +199,7 @@ footer li {
   z-index: 2;
   position: absolute;
   background: radial-gradient(
-    circle 9em at var(--Xpos) var(--Ypos),
+    circle 15em at var(--Xpos) var(--Ypos),
     rgba(0, 0, 0, 0),
     rgba(0, 0, 0, 1)
   );
@@ -234,7 +234,7 @@ button:hover {
   background-color: #ffffff;
   color: #444;
   cursor: pointer;
-  padding: 18px;
+  padding: 18px 18px 18px 27px;
   width: 100%;
   text-align: left;
   border: none;
@@ -314,14 +314,10 @@ button:hover {
   }
 }
 
-.articleOne p.left {
+/* .articleOne p.left {
   text-shadow: 2px 2px 3px rgba(182, 254, 1, 0.5);
 }
 
 .articleOne p.right {
   text-shadow: -2px 2px 3px rgba(175, 194, 0, 0.5);
-}
-
-.white-text {
-  color: #fff;
-}
+} */
