@@ -1,5 +1,5 @@
 checkout live:
-https://rada-ii.github.io/CV-Resume/
+https://cv-resume-ashen.vercel.app/
 
 "different cv 😉"
 "p.s. checkout flashlight button"
