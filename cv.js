@@ -33,12 +33,13 @@ function toggleFlashlight() {
     flashlight.style.display = "none";
     head.style.display = "";
     img.classList.add("display");
+    location.reload();
   } else {
     flashlight.style.display = "block";
     head.style.display = "flex";
     img.classList.remove("display");
     button.style.marginBottom = "10px";
-    resumeName.style.marginLeft = "0";
+    resumeName.style.marginLeft = "2%";
     resumeJob.style.marginRight = "0";
   }
 }
