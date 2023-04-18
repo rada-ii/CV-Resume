@@ -1,3 +1,4 @@
+/* flashlight */
 let mouseX = 0;
 let mouseY = 0;
 let flashlight = document.getElementById("flashlight");
@@ -6,6 +7,11 @@ let img = document.getElementsByTagName("img")[0];
 let button = document.querySelector(".button-container");
 let resumeName = document.getElementsByTagName("h1")[0];
 let resumeJob = document.getElementsByTagName("h2")[0];
+let footer = document.querySelector(".footer");
+let container = document.querySelector(".container");
+let two = document.querySelector(".two");
+let three = document.querySelector(".three");
+
 let flashlightOn = false;
 
 const isTouchDevice = () => {
@@ -41,6 +47,14 @@ function toggleFlashlight() {
     button.style.marginBottom = "10px";
     resumeName.style.marginLeft = "2%";
     resumeJob.style.marginRight = "0";
+    container.style.backgroundColor = "#3a3a3a";
+    container.style.color = "#f3f3f3";
+    two.style.backgroundColor = "#3a3a3a";
+    two.style.color = "#f3f3f3";
+    three.style.backgroundColor = "#3a3a3a";
+    three.style.color = "#f3f3f3";
+    footer.style.backgroundColor = "#3a3a3a";
+    footer.style.color = "#f3f3f3";
   }
 }
 
@@ -49,11 +63,29 @@ flashlight.style.display = "none";
 document.addEventListener("mousemove", getMousePosition);
 document.addEventListener("touchmove", getMousePosition);
 
+/*date footer */
+
 const now = new Date();
 const span = document.createElement("span");
 
 span.textContent = dateFns.format(now, "MMMM, YYYY. ");
-
 const existingSpan = document.querySelector("span");
-
 existingSpan.parentNode.replaceChild(span, existingSpan);
+
+/* accordion*/
+
+let acc = document.getElementsByClassName("accordion");
+let i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+
+    let panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}

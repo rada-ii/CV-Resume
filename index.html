@@ -18,25 +18,26 @@
     <title>CV</title>
   </head>
   <body>
-    <div class="button-container">
+    <!-- <div class="button-container">
       <button onclick="toggleFlashlight()">Flashlight effect</button>
-    </div>
+    </div> -->
     <div id="flashlight"></div>
 
     <div class="container">
       <header>
         <h1>Radmila Ivankovic</h1>
         <h2>Junior Web Developer</h2>
-        <img class="display" src="./img/cv.jpeg" alt="profile-photo" />
+        <img class="display" src="./img/cool.jpeg" alt="profile-photo" />
       </header>
       <section>
         <article class="articleOne">
           <h3>Skills <i class="fa-solid fa-laptop-code fa-shake"></i></h3>
           <p>
-            html, css & javascript || jquery (basic) || react (basic) || git ||
-            mysql (basic)
+            html, css & javascript || api - json || jquery (basic) || react
+            (basic) || git || mysql (basic)
           </p>
         </article>
+
         <article class="articleTwo">
           <h3>
             Work Experience <i class="fa-solid fa-briefcase fa-shake"></i>
@@ -102,6 +103,8 @@
           </p>
         </article>
       </section>
+    </div>
+    <div class="container two">
       <aside>
         <h3>Summary <i class="fa-regular fa-face-smile-wink fa-shake"></i></h3>
 
@@ -118,8 +121,62 @@
           projects. My "thirst" for knowledge is insatiable because I truly
           discovered passion in my life.
         </p>
-        <p></p>
       </aside>
+    </div>
+    <div class="container three">
+      <aside>
+        <h3>Projects <i class="fa-solid fa-file-code fa-shake"></i></h3>
+
+        <button class="accordion">
+          <a href="https://github.com/rada-ii/bit-show-react"
+            >Bit show (React)</a
+          >
+        </button>
+        <div class="panel">
+          <p>
+            This is responsive project written in React, which displays details
+            about tv shows, and all "data" shown in project is from API.
+          </p>
+        </div>
+
+        <button class="accordion">
+          <a href="https://github.com/rada-ii/Rick_and_Morty"
+            >Rick & Morty (html/css/bootstrap/js/jquery)</a
+          >
+        </button>
+        <div class="panel">
+          <p>
+            This is responsive project, which displays details about tv show
+            "Rick & Morty", and all "data" shown in project is from API.
+          </p>
+        </div>
+
+        <button class="accordion">
+          <a href="https://github.com/rada-ii/ToDo"
+            >ToDo (html/css/bootstrap/js)</a
+          >
+        </button>
+        <div class="panel">
+          <p>
+            This is responsive project for adding/deleting todos (reminders),
+            and with alarm!
+          </p>
+        </div>
+
+        <button class="accordion">
+          <a href="https://github.com/rada-ii?tab=repositories"
+            >All projects ...</a
+          >
+        </button>
+        <div class="panel">
+          <p>
+            All my work until now you can checkout by clicking on "All projects
+            ...", and on the link in the footer!
+          </p>
+        </div>
+      </aside>
+    </div>
+    <div class="container">
       <footer>
         <ul>
           <li>
@@ -130,7 +187,9 @@
             ||
             <i class="fa-brands fa-github fa-shake"></i>
 
-            <a href="https://github.com/rada-ii?tab=repositories"
+            <a
+              class="foot-link"
+              href="https://github.com/rada-ii?tab=repositories"
               >https://github.com/rada-ii?tab=repositories</a
             >
             ||
@@ -141,7 +200,9 @@
           </li>
           <li>
             <i class="fa-brands fa-linkedin fa-shake"></i>
-            <a href="https://www.linkedin.com/in/rada-ivankovi%C4%87-52621b74/"
+            <a
+              class="foot-link"
+              href="https://www.linkedin.com/in/rada-ivankovi%C4%87-52621b74/"
               >https://www.linkedin.com/in/rada-ivankovi%C4%87-52621b74/</a
             >
             ||
