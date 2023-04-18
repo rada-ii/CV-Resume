@@ -4,6 +4,8 @@ let flashlight = document.getElementById("flashlight");
 let head = document.getElementsByTagName("header")[0];
 let img = document.getElementsByTagName("img")[0];
 let button = document.querySelector(".button-container");
+let resumeName = document.getElementsByTagName("h1")[0];
+let resumeJob = document.getElementsByTagName("h2")[0];
 let flashlightOn = false;
 
 const isTouchDevice = () => {
@@ -36,6 +38,8 @@ function toggleFlashlight() {
     head.style.display = "flex";
     img.classList.remove("display");
     button.style.marginBottom = "10px";
+    resumeName.style.marginLeft = "0";
+    resumeJob.style.marginRight = "0";
   }
 }
 
