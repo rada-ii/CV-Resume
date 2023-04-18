@@ -7,7 +7,6 @@ let img = document.getElementsByTagName("img")[0];
 let button = document.querySelector(".button-container");
 let resumeName = document.getElementsByTagName("h1")[0];
 let resumeJob = document.getElementsByTagName("h2")[0];
-let footer = document.querySelector(".footer");
 let container = document.querySelector(".container");
 let two = document.querySelector(".two");
 let three = document.querySelector(".three");
@@ -53,8 +52,6 @@ function toggleFlashlight() {
     two.style.color = "#f3f3f3";
     three.style.backgroundColor = "#3a3a3a";
     three.style.color = "#f3f3f3";
-    footer.style.backgroundColor = "#3a3a3a";
-    footer.style.color = "#f3f3f3";
   }
 }
 
