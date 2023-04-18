@@ -234,7 +234,7 @@ button:hover {
   background-color: #ffffff;
   color: #444;
   cursor: pointer;
-  padding: 18px 18px 18px 27px;
+  padding: 1em 2em;
   width: 100%;
   text-align: left;
   border: none;
