@@ -27,10 +27,14 @@ header {
   border-left: 10px solid #e4e4e4;
   margin: 0 auto;
   align-items: center;
+  /* flex-direction: column; */
 }
-/* .flex {
-  display: flex;
-} */
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+}
 
 img {
   width: 10vw;
