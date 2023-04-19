@@ -133,6 +133,9 @@ aside p {
 .articleThree p {
   padding: 5px;
 }
+.articleTwo li:last-child {
+  margin-bottom: 1em;
+}
 
 .articleThree p:last-child,
 aside li:last-child {
