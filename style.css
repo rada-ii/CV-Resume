@@ -236,21 +236,23 @@ button:hover {
 /* -----------accordion------------ */
 
 .accordion {
-  background-color: #ffffff;
+  background-color: #f0f0f0;
   color: #444;
   cursor: pointer;
   padding: 1em 2em;
   width: 100%;
   text-align: left;
   border: none;
+  /* border-bottom: 1px solid #05204a; */
   outline: none;
   transition: 0.4s;
   font-weight: bold;
   font-size: 1em;
+  /* margin-bottom: 1em; */
 }
 
 .accordion:hover {
-  background-color: #ebebeb;
+  background-color: #e0e0e0;
 }
 
 .panel {
