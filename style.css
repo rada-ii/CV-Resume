@@ -192,8 +192,8 @@ footer li {
 }
 
 #flashlight {
-  --Xpos: 580px;
-  --Ypos: 100px;
+  --Xpos: 977px;
+  --Ypos: 124px;
 }
 
 #flashlight::before {
