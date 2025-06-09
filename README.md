@@ -26,8 +26,8 @@ This is my personal CV made as a web page instead of a PDF. It has my skills, wo
 The main feature is a "flashlight" effect where the page goes dark and you get a circle of light following your cursor. It's just CSS `radial-gradient` with JavaScript mouse tracking.
 
 ## 🚀 Live Demo
-[https://cv-resume-ashen.vercel.app/](https://cv-resume-ashen.vercel.app/)
 
+<a href="https://cv-resume-ashen.vercel.app/" target="_blank">Live Demo</a>
 
 ## Structure
 
